@@ -1,9 +1,9 @@
 {
 	"info": {
-		"_postman_id": "1b0fcdd1-c009-44ba-9e9b-7d4132bbe680",
+		"_postman_id": "68a8b4d3-eb40-4f8c-9e7b-20a6cb73c665",
 		"name": "Seguranca_Rota",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "9752073"
+		"_exporter_id": "26212225"
 	},
 	"item": [
 		{
@@ -11,14 +11,23 @@
 			"item": [
 				{
 					"name": "selecionar",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
 					"request": {
 						"method": "GET",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"url": {
-							"raw": "{{url_base}}/news/selecionar",
+							"raw": "http://localhost:3000/news/selecionar",
+							"protocol": "http",
 							"host": [
-								"{{url_base}}"
+								"localhost"
 							],
+							"port": "3000",
 							"path": [
 								"news",
 								"selecionar"
@@ -32,11 +41,17 @@
 					"request": {
 						"method": "POST",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"url": {
-							"raw": "{{url_base}}/news/inserir",
+							"raw": "http://localhost:3000/news/inserir",
+							"protocol": "http",
 							"host": [
-								"{{url_base}}"
+								"localhost"
 							],
+							"port": "3000",
 							"path": [
 								"news",
 								"inserir"
@@ -50,13 +65,19 @@
 					"request": {
 						"method": "PUT",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"url": {
-							"raw": "{{url_base}}/news/alterar",
+							"raw": "http://localhost:3000/news/alterar",
+							"protocol": "http",
 							"host": [
-								"{{url_base}}"
+								"localhost"
 							],
+							"port": "3000",
 							"path": [
-								"categoria",
+								"news",
 								"alterar"
 							]
 						}
@@ -64,15 +85,21 @@
 					"response": []
 				},
 				{
-					"name": "excluir",
+					"name": "deletar",
 					"request": {
 						"method": "DELETE",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"url": {
-							"raw": "{{url_base}}/news/deletar",
+							"raw": "http://localhost:3000/news/deletar",
+							"protocol": "http",
 							"host": [
-								"{{url_base}}"
+								"localhost"
 							],
+							"port": "3000",
 							"path": [
 								"news",
 								"deletar"

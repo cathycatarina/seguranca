@@ -7,14 +7,27 @@ const app = express();
 /*HABILITA A APLICACAO A MANIPULAR JSON*/
 app.use(express.json());
 
-/*TESTE DE ROTA HTTP GET
-1 - NOME DA ROTA
-2 - CALLBACK QUE EXECUTA A ACAO DA ROTA
-*/
+const newsController = require('./Controller/newsController');
 
-app.get('testeGet', (req, res)=>{
-    res.send('RESPOSTA DA ROTA DE HTTP GET');
-});
+app.use('/', newsController);
+
+
+// app.get('/testeGet', (req, res)=>{
+//     res.send('RESPOSTA DA ROTA DE HTTP GET');
+// });
+
+/*app.post('/testePost', (req, res)=>{
+    res.send('RESPOSTA DA ROTA DE HTTP POST');
+});*/
+
+// app.put('/testePut', (req, res)=>{
+//     res.send('RESPOSTA DA ROTA DE HTTP PUT');
+// });
+
+// app.delete('/testeDelete', (req, res)=>{
+//     res.send('RESPOSTA DA ROTA DE HTTP DELETE');
+// });
+
 
 /*CRIACAO DO SERVIDOR HTTP:
 1 - PORTA LOGICA

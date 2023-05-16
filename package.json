@@ -4,8 +4,6 @@
   "description": "Projeto vitrine de tendencias em seguranca eletronica",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "bbb": "\"vamos testar o comando para ver se funciona\"",
     "start": " nodemon ./index.js"
   },
   "author": "Cathy Oliver",
