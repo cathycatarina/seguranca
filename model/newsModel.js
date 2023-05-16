@@ -14,9 +14,17 @@ PARAMETROS:
 const news = connection.define(
     'tbl_news',
     {
-        categoria_news:{
-            type: sequelize.STRING,
+        categoria:{
+            type: sequelize.STRING(45),
             allowNull: false
+        },
+        assunto: {
+            type: sequelize.STRING(45),
+            allowNull: false
+        },
+        Autor: {
+            type:sequelize.STRING(45),
+            allowNull:false
         }
     }
 );
